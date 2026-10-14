@@ -3,3 +3,5 @@
 *.crx
 *.pem
 node_modules/
+打盗工作台备份_*.json
+.claude/
