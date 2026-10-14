@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "打盗工作台",
+  "version": "1.3.0",
+  "description": "作者本地使用的盗文排查与投诉整理工具：在你自己的浏览器里搜索、人工核对、取证、整理投诉材料。不自动提交任何投诉。",
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting",
+    "activeTab",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "https://www.baidu.com/*",
+    "https://m.baidu.com/*",
+    "https://cn.bing.com/*",
+    "https://www.bing.com/*",
+    "https://www.sogou.com/*",
+    "https://www.so.com/*",
+    "https://quark.sm.cn/*",
+    "https://so.toutiao.com/*",
+    "https://s.weibo.com/*",
+    "https://*.jjwxc.net/*",
+    "https://ipp.quark.cn/*"
+  ],
+  "optional_host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "打盗工作台",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>打盗工作台</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="shell">
+    <nav class="rail" aria-label="步骤">
+      <div class="brand">
+        <span class="brand-seal" aria-hidden="true">盗</span>
+        <span class="brand-name">打盗工作台</span>
+      </div>
+      <ol class="steps">
+        <li><button data-view="profile"><span class="n">1</span>作者资料</button></li>
+        <li><button data-view="books"><span class="n">2</span>作品库</button></li>
+        <li><button data-view="search"><span class="n">3</span>搜索盗文</button></li>
+        <li><button data-view="review"><span class="n">4</span>人工审核 <b class="badge" id="pendingBadge"></b></button></li>
+        <li><button data-view="complain"><span class="n">5</span>投诉材料</button></li>
+        <li><button data-view="track"><span class="n">6</span>投诉跟踪 <b class="badge" id="trackBadge"></b></button></li>
+      </ol>
+      <div class="rail-foot">
+        <button data-view="settings" class="plain">设置与备份</button>
+        <p class="rail-note">所有资料只保存在这台电脑的浏览器里。工具不会替你提交任何投诉。</p>
+      </div>
+    </nav>
+    <main id="main" tabindex="-1"></main>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>
